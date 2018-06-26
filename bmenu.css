@@ -100,19 +100,26 @@
   article.panel {
     display: none;
   }
-  /*nav.bmenu > a:not(:hover):not(:focus) ~ article.panel:nth-of-type(1),
-  nav.bmenu > a.no-panel:hover ~ article.panel:nth-of-type(1) {
+  
+  #bmenu_toggle ~ div.hide-at-start-wrapper > 
+  nav.bmenu > article.panel:nth-of-type(10) {
     display: flex;
   }
-  nav.bmenu > a:focus:not(:nth-of-type(1)):not(.no-panel) ~ article.panel:nth-of-type(1) {
+  #bmenu_toggle ~ div.hide-at-start-wrapper > 
+  nav.bmenu > article.panel:hover ~ article.panel:nth-of-type(10),
+  #bmenu_toggle ~ div.hide-at-start-wrapper > 
+  nav.bmenu > a:focus:not(.no-panel) ~ article.panel:nth-of-type(10),
+  #bmenu_toggle ~ div.hide-at-start-wrapper > 
+  nav.bmenu > a:hover:not(.no-panel) ~ article.panel:nth-of-type(10) {
     display: none;
   }
-  nav.bmenu > a:hover:not(:nth-of-type(1)):not(.no-panel) ~ article.panel:nth-of-type(1) {
-    display: none;
-  }*/
 
   nav.bmenu > a:nth-of-type(1):focus ~ article.panel:nth-of-type(1),
   nav.bmenu > a:nth-of-type(1):hover ~ article.panel:nth-of-type(1) {
+    display: flex;
+  }
+  nav.bmenu > a:nth-of-type(1):focus ~ article.panel:nth-of-type(10),
+  nav.bmenu > a:nth-of-type(1):hover ~ article.panel:nth-of-type(10) {
     display: flex;
   }
   nav.bmenu > a:nth-of-type(2):focus ~ article.panel:nth-of-type(2),
@@ -225,9 +232,6 @@
   nav.bmenu > article.panel:hover {
     display: flex;
   }
-
-
-
 
   nav.bmenu > article.panel:hover ~ article.panel {
     display: none;
