@@ -317,13 +317,13 @@
 /** animation **/
   input#bmenu_toggle:checked ~ div.hide-at-start-wrapper > nav.bmenu.panel {
     animation: roll-open 0.4s ease 0s normal forwards;
-    transition: padding 0.1s ease, color 0.2s ease 0.1s;
+    transition: padding 0.1s ease, color 0.2s ease 0.1s, min-width 1s ease 1s, max-width 1s ease 1s;
     display: block;
     color: white;
   }
   input#bmenu_toggle:not(:checked) ~ div.hide-at-start-wrapper > nav.bmenu.panel {
     animation: roll-closed 0.4s ease 0s normal forwards;
-    transition: padding 0.1s ease 0.2s, color 0.2s ease;
+    transition: padding 0.1s ease 0.2s, color 0.2s ease, min-width 1s ease 1s, max-width 1s ease 1s;
     padding: 0;
     color: black;
   }
@@ -475,10 +475,11 @@
     min-width: 460px;
   }
   nav.bmenu.panel.animated {
-    transition: min-width 1s ease 1s;
     min-width: 666px;
+    max-width: auto;
   }
   #bmenu_toggle:checked ~ div > nav.bmenu.panel.animated {
-    transition: min-width 1s ease 1s;
     min-width: auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
