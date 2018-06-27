@@ -72,10 +72,6 @@
     position: relative;
     min-height: calc(463px - 2*1.25rem);
   }
-  nav.bmenu article.panel:nth-of-type(1),
-  nav.bmenu article.panel:nth-of-type(10) {
-    min-width: 460px;
-  }
   nav.bmenu article.panel section.titled-group {
     min-width: 160px;
   }
@@ -473,3 +469,14 @@
     z-index: 1002;
   }
 
+/** fix start issue **/
+  nav.bmenu article.panel:nth-of-type(1),
+  nav.bmenu article.panel:nth-of-type(10) {
+    min-width: 460px;
+  }
+  nav.bmenu.panel.animated {
+    min-width: 666px;
+  }
+  #bmenu_toggle:checked ~ div > nav.bmenu.panel.animated {
+    min-width: auto;
+  }
