@@ -72,6 +72,10 @@
     position: relative;
     min-height: calc(463px - 2*1.25rem);
   }
+  nav.bmenu article.panel:nth-of-type(1),
+  nav.bmenu article.panel:nth-of-type(10) {
+    min-width: 460px;
+  }
   nav.bmenu article.panel section.titled-group {
     min-width: 160px;
   }
