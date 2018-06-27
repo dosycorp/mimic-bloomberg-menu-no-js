@@ -103,7 +103,7 @@
   
   #bmenu_toggle ~ div.hide-at-start-wrapper > 
   nav.bmenu > article.panel:nth-of-type(10) {
-    display: flex;
+    display: inline-flex;
   }
   #bmenu_toggle ~ div.hide-at-start-wrapper > 
   nav.bmenu > article.panel:hover ~ article.panel:nth-of-type(10),
@@ -116,43 +116,43 @@
 
   nav.bmenu > a:nth-of-type(1):focus ~ article.panel:nth-of-type(1),
   nav.bmenu > a:nth-of-type(1):hover ~ article.panel:nth-of-type(1) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(1):focus ~ article.panel:nth-of-type(10),
   nav.bmenu > a:nth-of-type(1):hover ~ article.panel:nth-of-type(10) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(2):focus ~ article.panel:nth-of-type(2),
   nav.bmenu > a:nth-of-type(2):hover ~ article.panel:nth-of-type(2) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(3):focus ~ article.panel:nth-of-type(3),
   nav.bmenu > a:nth-of-type(3):hover ~ article.panel:nth-of-type(3) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(4):focus ~ article.panel:nth-of-type(4),
   nav.bmenu > a:nth-of-type(4):hover ~ article.panel:nth-of-type(4) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(5):focus ~ article.panel:nth-of-type(5),
   nav.bmenu > a:nth-of-type(5):hover ~ article.panel:nth-of-type(5) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(6):focus ~ article.panel:nth-of-type(6),
   nav.bmenu > a:nth-of-type(6):hover ~ article.panel:nth-of-type(6) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(7):focus ~ article.panel:nth-of-type(7),
   nav.bmenu > a:nth-of-type(7):hover ~ article.panel:nth-of-type(7) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(8):focus ~ article.panel:nth-of-type(8),
   nav.bmenu > a:nth-of-type(8):hover ~ article.panel:nth-of-type(8) {
-    display: flex;
+    display: inline-flex;
   }
   nav.bmenu > a:nth-of-type(9):focus ~ article.panel:nth-of-type(9),
   nav.bmenu > a:nth-of-type(9):hover ~ article.panel:nth-of-type(9) {
-    display: flex;
+    display: inline-flex;
   }
 
   nav.bmenu > a:hover:not(.no-panel) ~ a:focus:nth-of-type(1) ~ article.panel:nth-of-type(1),
@@ -230,7 +230,7 @@
   }
 
   nav.bmenu > article.panel:hover {
-    display: flex;
+    display: inline-flex;
   }
 
   nav.bmenu > article.panel:hover ~ article.panel {
