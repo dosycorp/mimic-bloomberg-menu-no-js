@@ -284,6 +284,8 @@
     /* just maths, bitches, MATHS */
     right: calc(0.5*0.5em + 1.25em);
     top: calc(50% + 0.5*0.5*0.5em);
+    -ms-transform: rotate(45deg) translate(-50%, -50%);
+    -webkit-transform: rotate(45deg) translate(-50%, -50%);
     transform: rotate(45deg) translate(-50%, -50%);
   }
   nav.bmenu > a:hover::after,
@@ -306,6 +308,8 @@
     display: inline-block;
     font-weight: 900;
     text-shadow: 0 1px 0 black;
+    -ms-transform: scaleX(1.2);
+    -webkit-transform: scaleX(1.2);
     transform: scaleX(1.2);
     margin-right: 1px;
   }
@@ -433,3 +437,35 @@
       animation: 0;
     }
   }
+
+/** triangular hover regions **/
+  nav.bmenu.panel > a {
+    position: relative;
+  }
+  nav.bmenu.panel > a > span.triangle-origin {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  nav.bmenu.panel > a > span.triangle-origin:hover::after {
+    background: transparent;
+    z-index: 1001;
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -300px;
+    top: 0;
+    content: "";
+    /**
+    outline: 1px solid lime;
+    **/
+    -ms-transform: rotate(-45deg) skew(20deg,20deg) translate(0,-100%);
+    -webkit-transform: rotate(-45deg) skew(20deg,20deg) translate(0,-100%);
+    transform: rotate(-45deg) skew(20deg,20deg) translate(0,-100%);
+  }
+  nav.bmenu.panel > article.panel {
+    position: relative;
+    z-index: 1002;
+  }
+
