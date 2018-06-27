@@ -475,8 +475,10 @@
     min-width: 460px;
   }
   nav.bmenu.panel.animated {
+    transition: min-width 1s ease 1s;
     min-width: 666px;
   }
   #bmenu_toggle:checked ~ div > nav.bmenu.panel.animated {
+    transition: min-width 1s ease 1s;
     min-width: auto;
   }
